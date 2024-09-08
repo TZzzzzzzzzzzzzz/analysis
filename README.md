@@ -24,8 +24,8 @@ The project is structured into multiple modules, each responsible for a specific
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/your-repo-name.git
-    cd your-repo-name
+    git clone https://github.com/TZzzzzzzzzzzzzz/analysis.git
+    cd analysis
     ```
 
 2. Create a virtual environment and activate it:
@@ -39,28 +39,19 @@ The project is structured into multiple modules, each responsible for a specific
     pip install -r requirements.txt
     ```
 
-    The `requirements.txt` file should include all necessary libraries and their versions, such as:
-    ```
-    pandas==1.3.3
-    numpy==1.21.2
-    scikit-learn==0.24.2
-    matplotlib==3.4.3
-    fpdf==1.7.2
-    selenium==3.141.0
-    ```
 
 ## Usage
 
 1. **Configuration**: Update the `config.py` file with the appropriate paths, API keys, and other configuration settings.
 
-2. **Run the Main Script**: Execute the `main.py` script to run the entire data analysis pipeline:
-    ```sh
-    python main.py
-    ```
-
-3. **Scrape Bilibili Videos**: Execute the `bilibili.py` script to scrape video information from Bilibili:
+2. **Scrape Bilibili Videos**: Execute the `bilibili.py` script to scrape video information from Bilibili:
     ```sh
     python bilibili.py
+    ```
+
+3. **Run the Main Script**: Execute the `main.py` script to run the entire data analysis pipeline:
+    ```sh
+    python main.py
     ```
 
 ## Modules
@@ -68,14 +59,17 @@ The project is structured into multiple modules, each responsible for a specific
 ### config.py
 Contains configuration settings for data file paths, API keys, analysis parameters, logging, and visualization settings.
 
+### bilibili.py
+Scrapes video information from Bilibili using Selenium.
+
 ### data_loading.py
 Provides functions to load data from specified document types (CSV or Excel).
 
-### data_preprocessing.py
-Contains functions for data cleaning, including handling missing values and outliers, and data transformation and normalization.
-
 ### data_exploration.py
 Performs Exploratory Data Analysis (EDA), including statistical analysis and visualization.
+
+### data_preprocessing.py
+Contains functions for data cleaning, including handling missing values and outliers, and data transformation and normalization.
 
 ### feature_engineering.py
 Contains functions for creating new features, modifying existing features, and selecting important features to improve model performance.
@@ -92,9 +86,6 @@ Generates an analysis report in PDF format using the FPDF library.
 ### main.py
 The main script that orchestrates the entire data analysis pipeline.
 
-### bilibili.py
-Scrapes video information from Bilibili using Selenium.
-
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
@@ -109,8 +100,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Author
 
-TZ
+ZHAO Cheng
 
 ## Contact
 
-For any inquiries, please contact TZ at [c-zhao23@mails.tsinghua.edu.cn](mailto:c-zhao23@mails.tsinghua.edu.cn).
+For any inquiries, please contact ZHAO Cheng at [c-zhao23@mails.tsinghua.edu.cn](mailto:c-zhao23@mails.tsinghua.edu.cn).
