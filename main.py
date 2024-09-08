@@ -3,7 +3,7 @@
 '''
 @Author: TZ
 @Date: 2024/09/06 11:14
-@Desc: ...
+@Desc: This script is designed to analyze the Boston Housing dataset using machine learning.
 '''
 
 
